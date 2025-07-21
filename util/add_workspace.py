@@ -14,7 +14,7 @@ abs_path = (
 
 splited = abs_path.split('/')
 
-last_index = splited.index('cvm-data-pipeline')
+last_index = splited.index('data-pipeline')
 
 folder_path = '/Workspace' + '/'.join(splited[:last_index + 1])
 
