@@ -14,9 +14,7 @@ abs_path = (
 
 splited = abs_path.split('/')
 
-last_index = splited.index('data-pipeline')
-
-folder_path = '/Workspace' + '/'.join(splited[:last_index + 1])
+folder_path = '/Workspace' + '/'.join(splited[:-2])
 
 print(f'Adding new sources to sys.path: "{folder_path}"')
 
